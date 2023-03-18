@@ -1,4 +1,4 @@
-document.getElementById("button").onclick = function (){
-    document.getElementById("confirm").innerHTML = "order placed. check email for confirmation";
-    document.getElementById("button").style.display ="none";
-}
+// let name = "rose";
+var cheese = "yummy"
+
+console.log(cheese);
