@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope In Java script</title>
+</head>
+
+<body>
+    <!-- <h1>Scope in JS</h1> -->
+    <p>my first paragraph</p>
+    <p>my third paragraph</p>
+    <p>my second paragraph</p>
+
+    <script>
+        /* to avoid mistakes never use the global scope
+        to avoid using global scope wrap all your code in an invoked function expression
+        that runs immediately after the script loads it will also keep variables out of global scope */
+
+
+        /*   let aVariable = "this is global";
+          function testScope() {
+               oopsGlobal = "this is accidentally global";
+              let aVariable = "this is local";
+              console.log(aVariable);
+          };
+  
+          testScope();   
+          console.log(oopsGlobal); */
+
+/*         (function () {
+
+            var myPs = document.querySelector('p');
+
+            for (var i = 0; i < myPs.length; i++) {
+                myPs[i].style.color = "green";
+            };
+        }());
+
+
+       for( let i=0; i<10; i++){
+        console.log(i);
+       };
+
+       console.log(`the value of i is ${i}`); */
+
+/* console.log(rose);
+var rose = "name"; */
+
+
+/* console.log(rose);
+const rose = "name"; */
+
+console.log(rose);
+let rose = "name";
+
+    </script>
+</body>
+
+</html>

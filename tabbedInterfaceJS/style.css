@@ -1,0 +1,71 @@
+* { padding:0; margin:0; }
+
+body { 
+	padding: 100px 0; 
+	background:#ccc; 
+	font-family:Arial; 
+	color:#333; 
+}
+
+#tabs {
+    width: 400px;
+    margin: auto;
+
+}
+/* the > sign makes sure that we select the ul that is directly in the tabs */
+#tabs > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+/* here we do the styling for the anchor tags */
+
+#tabs > ul>li>a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2px;
+    background: #a2a2a2;
+    color: #CECECE;
+    text-decoration: none;
+    padding: 0 15px;
+    border-radius: 3px 3px 0 0;
+}
+
+#tabs > div {
+    display: none;
+    padding: 15px;
+    background: #eaeaea;
+
+}
+
+#tabs>div:first-of-type {
+    display: block;
+    background: #eaeaea;
+}
+
+#tabs > ul >li:first-of-type a {
+    color: #333;
+    background: #eaeaea;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* this is the transition */
+#tabs > div {
+    padding: 15px;
+    background: #eaeaea;
+    transition: opacity 200ms linear;
+}
+
+#tabs .active {
+    background: #eaeaea;
+    color: #333;
+}
+
+#tabs .hidden {display: none;}
+#tabs .visible {display: block;}
+#tabs .visuallyhidden {opacity: 0; }

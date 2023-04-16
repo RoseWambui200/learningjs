@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM BASICS</title>
+    <style>
+        input, label{
+            display: block;
+        }
+        input {
+            margin-bottom: 15px;
+        }
+
+        fieldset input, fieldset label {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="processor.php" method="POST">
+        <label for="fname">FIRST NAME</label> 
+        <input type="text" id="fname" name="fname" placeholder="firstName">
+
+       <label for="favcolor">FAVORITE COLOR</label>
+       <input type="color" id="favcolor" name="color">
+
+    <fieldset>
+        <legend>Do You Want Spam??</legend>
+       <input type="radio" name="spam" id="spam-yes" value="yes">
+       <label for="spam-yes">yes send me spam!</label>
+
+       <input type="radio" name="spam" id="spam-no" value="no" checked>
+       <label for="spam-no">No dont send me spam</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Favorite Animal</legend>
+       <input type="checkbox" name="animal[]" id="cat" value="Cat">
+       <label for="cat">Cat</label>
+
+       <input type="checkbox" name="animal[]" id="dog" value="Dog" >
+       <label for="dog">Dog</label>
+
+       <input type="checkbox" name="animal[]" id="ilama" value="ilama">
+       <label for="ilama">Ilama</label>
+    </fieldset>
+
+    <label for="foods">Favorite food</label>
+    <select name="fav_foods" id="foods">
+        <option value="chapo">Chapatis</option>
+        <option value="rice">rice</option>
+        <option value="beef">Beef</option>
+        <option value="chicken">Chicken</option>
+    </select>
+
+    <label for="comment">Please Tell Us What You Think</label>
+    <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+
+    <input type="submit" name="submit" id="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

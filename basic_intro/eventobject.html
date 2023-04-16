@@ -1,0 +1,44 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The event Object</title>
+</head>
+<body>
+    <h1>Javascript event object</h1>
+    <button>Dont press me !</button>
+    <script>
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', function (event) {
+            event.target.style.backgroundColor = "blue";
+            alert('i told you not to press me !');
+        });
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevent default</title>
+</head>
+<body>
+    <h1>prevent default</h1>
+    <a href="http://google.com">Link to google</a>
+
+    <script>
+        let link = document.querySelector('a');
+        link.addEventListener('click', function(event){
+            event.preventDefault();
+            alert('sorry no google');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom examples</title>
+    <!-- <style>
+        .blue { color: blue;}
+    </style> -->
+</head>
+
+<body>
+    <h1>Dom examples</h1>
+    <!-- <div id="special">
+        <p >here is my paragraph </p>
+        <p>here is another paragraph</p>
+        <p >here is one more paragraph</p>
+    </div>
+
+    <form action="">
+        <label for=""><input type = "checkbox">YES !
+    </form> -->
+
+    <div>
+        <p>This is my favorite song</p>
+        <P>remove this paragraph</P>
+    </div>
+
+    <script>
+       /*  let ps = document.getElementsByTagName('p');
+        for (let i = 0; i < ps.length; i++) {
+            ps[i].style.color = "red";
+            // alert(`showing paragraph ${i}`);   
+        }
+        console.log(ps);
+        // if we wanted to set the color of this we would use a loop because we cant apply color to a collection of things
+
+        // get element by class name only use a loop when there are different elements
+        let myClass = document.getElementsByClassName('special');
+        for (let i = 0; i < myClass.length; i++) {
+            myClass[i].style.color = "maroon";
+        }
+
+        // QUERY SELECTOR- it always returns the first element that it finds that matches. it return one thing
+        let myText = document.querySelector('#special .p1');
+        myText.style.color = "green"; */
+
+        // QUERY SELECTOR ALL METHODS- it will get all the elements that match a certain selector. it returns a nodelist of items that you have to loop through.
+       /*  let myLine = document.querySelectorAll("#special p");
+        for( let i=0; i<myLine.length; i++){
+            myLine[i].style.fontWeight = "bold";
+        } */
+
+        // WORKING WITH ELEMENT PROPERTIES
+        // 1. innerhtml
+        /* let myDiv =document.querySelector('#special')
+        myDiv.innerHTML = "<p>Here is the paragraph</p>"; */
+
+        /* //  2.class name
+        let firstPara = document.querySelector('p');
+        firstPara.className = "blue";
+
+        // WORKING WITH ELEMENT METHODS
+        //  1.Set attribute
+         let myCheckbox = document.querySelector('input');
+         myCheckbox.setAttribute('checked', "checked"); */
+
+        //  CREATING ELEMENTS AND TEXT NODES
+       /*  let myTag = document.createElement('p');
+        let myText = document.createTextNode("Here is my favorite song");
+        myTag.appendChild(myText);
+        let myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag); */
+
+        // REMOVING ELEMENTS
+        let myDiv = document.querySelector('div');
+        myDiv.removeChild(myDiv.children[1]);
+
+        
+        
+    </script>
+</body>
+
+</html>

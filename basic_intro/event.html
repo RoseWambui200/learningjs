@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>javascript events</h1> 
+   <button>Dont press me!</button>   -->
+
+<!-- this one you have to deal with one event at a time -->
+   <!-- <script>
+    let btn = document.querySelector('button');
+    function ouch(){
+        alert("oh no you didnt!")
+    }
+    btn.onclick = ouch;
+   </script> 
+ </body>
+</html> -->
+
+<!-- this you can deal with different events -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listeners</title>
+</head>
+<body>
+    <h1>javascript events</h1> 
+    <button>Dont press me!</button>
+ 
+ 
+    <script>
+     let btn = document.querySelector('button');
+     function ouch(){
+         alert("oh no you didnt!")
+     }
+     btn.addEventListener('click', ouch);
+    </script>
+</body>
+</html> -->
+
+<!-- the common method is to use add event listener with anonymus function -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript events</h1> 
+    <button>Dont press me!</button>
+ 
+ 
+    <script>
+     let btn = document.querySelector('button');
+    
+     btn.addEventListener('click', function() { 
+        alert("i told you not to!"); });
+    </script>
+</body>
+</html>
+

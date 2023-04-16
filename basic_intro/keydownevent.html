@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Down Event</title>
+    <!-- when a key is pressed on the key board -->
+</head>
+<body>
+    <h1>Key Down Event</h1>
+    <p>press a key on the keyboard</p>
+
+    <script>
+        document.addEventListener('keydown', function(){
+           alert("A key wa pressed!");
+
+        });
+// lets you know which key was pressed in the keyboard
+// event.which is a variable thats why we put dollar sign and curly brackets
+        document.addEventListener('keydown', function(event){
+         alert(`the ${event.which} key was pressed`);
+        });
+
+        document.addEventListener('keydown', function(event){
+         alert(`the ${event.key} key was pressed`);
+        });
+    </script>
+</body>
+</html>
